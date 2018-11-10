@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JavaScript</title>
+    <style>
+        body {
+            font: 2rem/1.2 sans-serif;
+            text-align: center;
+            height: 1000px;
+        }
+        #counter {
+            width: 100px;
+            margin: 10px auto;
+            cursor: pointer;
+            font: 1.5rem/1.2 sans-serif;
+        }
+        #level {
+            width: 180px;
+            margin: auto;
+            margin-top: 30px;
+            box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
+        }
+        #inputA, #inputB {
+            width: 240px;
+            height: 120px;
+            box-sizing: border-box;
+            font: 1.5rem/1.2 sans-serif;
+            padding: 20px;
+        }
+        #inputFirstNumber, #inputSecondNumber, #inputResult {
+            width: 240px;
+            height: 80px;
+            box-sizing: border-box;
+            font: 1.5rem/1.2 sans-serif;
+            padding: 20px;
+        }
+        #btnEquals {
+            font: 1.5rem/1.2 sans-serif;
+        }
+        #select {
+            font: 1.5rem/1.2 sans-serif;
+            padding: 3px;
+        }
+        #im {
+            margin-top: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h4>Задание A: "Копирование"</h4>
+    <input type="text" id="inputA" placeholder="Что копировать">
+    <button id="btnCopy">Скопировать</button>
+    <input type="text" id="inputB" disabled>
+    <h4>Задание B: "Игра - кликер"</h4>
+    <div>Нажми на кнопку ниже</div>
+    <button id="counter">0</button>
+    <div id="level">0 уровень</div>
+    <h4>Задание C: "Калькулятор"</h4>
+    <input type="number" id="inputFirstNumber">
+    <select id="select">
+        <option>+</option>
+        <option>-</option>
+        <option>*</option>
+        <option>/</option>
+    </select>
+    <input type="number" id="inputSecondNumber">
+    <button id="btnEquals">=</button>
+    <input type="number" id="inputResult" disabled>
+    <h4 id="im">Сделал Пряда Михаил</h4>
+    <script>
+        'use strict';
+        let s = counter.innerHTML;
+        counter.addEventListener('click', changeValue);
+        btnCopy.addEventListener('click', copyText);
+        btnEquals.addEventListener('click', result);
+        function result(e) {
+            if (select.value === '+') {
+                inputResult.value = Number(inputFirstNumber.value) + Number(inputSecondNumber.value);
+            }
+            if (select.value === '-') {
+                inputResult.value = Number(inputFirstNumber.value) - Number(inputSecondNumber.value);
+            }
+            if (select.value === '*') {
+                inputResult.value = Number(inputFirstNumber.value) * Number(inputSecondNumber.value);
+            }
+            if (select.value === '/') {
+                inputResult.value = Number(inputFirstNumber.value) / Number(inputSecondNumber.value);
+            }
+        }
+        function copyText(e) {
+            inputB.value = inputA.value;
+        }
+        function changeValue(e) {
+            if (s > 20) {
+                s += 1;
+                level.innerHTML = '1 уровень';
+            }
+            if (s > 40) {
+                s += 2;
+                level.innerHTML = '2 уровень';
+            }
+            if (s > 80) {
+                s += 3;
+                level.innerHTML = '3 уровень';
+            }
+            if (s > 160) {
+                s += 4;
+                level.innerHTML = '4 уровень';
+            }
+            if (s > 320) {
+                s += 5;
+                level.innerHTML = '5 уровень';
+            }
+            if (s > 640) {
+                s += 6;
+                level.innerHTML = '6 уровень';
+            }
+            if (s > 1280) {
+                s += 7;
+                level.innerHTML = '7 уровень';
+            }
+            if (s > 2560) {
+                s += 8;
+                level.innerHTML = '8 уровень';
+            }
+            if (s > 5120) {
+                s += 9;
+                level.innerHTML = '9 уровень';
+            }
+            if (s > 10240) {
+                s += 10;
+                level.innerHTML = 'Победа!';
+            }
+            counter.innerHTML = ++s;
+        }
+    </script>
+</body>
+</html>
