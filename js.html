@@ -6,10 +6,33 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>JavaScript</title>
     <style>
+        @media (min-width: 1000px) {
+            body {
+                width: 1000px;
+                margin: auto;
+            }
+        }
+        @media (max-width: 999px) {
+            #inputA, #inputB {
+                display: block;
+                margin: auto;
+            }
+            #inputFirstNumber, #inputSecondNumber, #inputResult {
+                display: block;
+                margin: auto;
+            }
+            #select {
+                margin-top: 12px;
+                margin-bottom: 12px;
+            }
+            #btnEquals {
+                margin-top: 12px;
+                margin-bottom: 12px;
+            }
+        }
         body {
             font: 2rem/1.2 sans-serif;
             text-align: center;
-            height: 1000px;
         }
         #counter {
             width: 100px;
@@ -20,7 +43,9 @@
         #level {
             width: 180px;
             margin: auto;
-            margin-top: 30px;
+            margin-top: 20px;
+            margin-bottom: 50px;
+            padding: 10px;
             box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
         }
         #inputA, #inputB {
@@ -29,6 +54,10 @@
             box-sizing: border-box;
             font: 1.5rem/1.2 sans-serif;
             padding: 20px;
+        }
+        #inputB {
+            margin-bottom: 40px;
+            margin-top: 13px;
         }
         #inputFirstNumber, #inputSecondNumber, #inputResult {
             width: 240px;
@@ -45,7 +74,11 @@
             padding: 3px;
         }
         #im {
-            margin-top: 100px;
+            margin-top: 120px;
+            margin-bottom: 30px;
+        }
+        #divTouch {
+            margin-bottom: 12px;
         }
     </style>
 </head>
@@ -54,10 +87,12 @@
     <input type="text" id="inputA" placeholder="Что копировать">
     <button id="btnCopy">Скопировать</button>
     <input type="text" id="inputB" disabled>
+    <hr>
     <h4>Задание B: "Игра - кликер"</h4>
-    <div>Нажми на кнопку ниже</div>
+    <div id="divTouch">Нажми на кнопку ниже</div>
     <button id="counter">0</button>
     <div id="level">0 уровень</div>
+    <hr>
     <h4>Задание C: "Калькулятор"</h4>
     <input type="number" id="inputFirstNumber">
     <select id="select">
@@ -94,43 +129,43 @@
             inputB.value = inputA.value;
         }
         function changeValue(e) {
-            if (s > 20) {
+            if (s >= 20) {
                 s += 1;
                 level.innerHTML = '1 уровень';
             }
-            if (s > 40) {
+            if (s >= 40) {
                 s += 2;
                 level.innerHTML = '2 уровень';
             }
-            if (s > 80) {
+            if (s >= 80) {
                 s += 3;
                 level.innerHTML = '3 уровень';
             }
-            if (s > 160) {
+            if (s >= 160) {
                 s += 4;
                 level.innerHTML = '4 уровень';
             }
-            if (s > 320) {
+            if (s >= 320) {
                 s += 5;
                 level.innerHTML = '5 уровень';
             }
-            if (s > 640) {
+            if (s >= 640) {
                 s += 6;
                 level.innerHTML = '6 уровень';
             }
-            if (s > 1280) {
+            if (s >= 1280) {
                 s += 7;
                 level.innerHTML = '7 уровень';
             }
-            if (s > 2560) {
+            if (s >= 2560) {
                 s += 8;
                 level.innerHTML = '8 уровень';
             }
-            if (s > 5120) {
+            if (s >= 5120) {
                 s += 9;
                 level.innerHTML = '9 уровень';
             }
-            if (s > 10240) {
+            if (s >= 10240) {
                 s += 10;
                 level.innerHTML = 'Победа!';
             }
