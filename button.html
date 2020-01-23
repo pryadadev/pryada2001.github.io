@@ -2,61 +2,68 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Button</title>
+    <title>Click</title>
     <style>
-        .box {
-            width: 300px;
-            height: 150px;
-            margin: 50px;
-            box-sizing: border-box;
-            padding-top: 40px;
-            padding-left: 60px;
-            border: 1px solid rgba(0, 0, 0, 0.3);
-            border-radius: 30px;
-            background-color: aqua;
-            box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+        body {
+            background-color: #35363a;
+            font-family: Arial, sans-serif;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 75px 125px;
+            font-size: 24px;
             cursor: pointer;
-            user-select: none;
+            text-align: center;
+            text-decoration: none;
+            outline: none;
+            color: #fff;
+            background-color: #4CAF50;
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 9px #999;
+            transition: .05s;
+            margin: 40px;
+            font-weight: 600;
+            letter-spacing: 3px;
+            text-shadow: rgb(128, 128, 128) 0 0 2px;
         }
-        .box:hover {
-            box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.5);
+
+        .button:hover {
+            background-color: #3e8e41
         }
-        .box:active {
-            background-color: rgb(0, 180, 180);
+
+        .button:active {
+            background-color: #3e8e41;
+            box-shadow: 0 5px #666;
+            transform: translateY(4px);
         }
+
         .text {
-            font-family: sans-serif;
-            font-weight: 500;
-            font-size: 50px;
-            letter-spacing: 5px;
-        }
-        .score_box {
-            font-family: sans-serif;
-            font-size: 30px;
-            font-weight: 500;
-            width: 300px;
-            height: 150px;
-            margin: 50px;
-            box-sizing: border-box;
+            font-size: 40px;
+            font-weight: 600;
+            color: #ffd700;
+            margin: 40px;
+            text-shadow: #ceaf00 0 0 2px;
         }
     </style>
 </head>
 <body>
-    <div class="box">
-        <span class="text" id="btn">Button</span>
-    </div>
-    <div class="score_box">
-        <span class="score_text">Score:</span>
-        <span id="score">0</span>
+    <button class="button" id="BtnClick">BUTTON</button>
+    <div>
+        <span class="text">
+            MONEY:
+            <span id="counter">
+                0
+            </span>
+        </span>
     </div>
     <script>
         'use strict';
-        btn.addEventListener('click', up);
-        function up(e) {
-            ++score.innerHTML;
-            if (parseInt(score.innerHTML) % 54 == 0) {
+        BtnClick.addEventListener('click', UpCounter);
+        function UpCounter(e) {
+            ++counter.innerHTML;
+            if (parseInt(counter.innerHTML) % 54 == 0) {
                 let audio = new Audio();
                 audio.src = 'click.mp3';
                 audio.autoplay = true;
