@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Click</title>
     <style>
-        @media (max-width: 1000px) {
+        @media (max-width: 1023px) {
             .button {
                 display: block;
                 width: 80%;
@@ -14,6 +14,7 @@
                 margin: auto;
                 margin-top: 20px;
                 background-color: #4CAF50;
+                border: 0;
             }
         }
         @media (min-width: 1024px) {
@@ -52,6 +53,7 @@
                 font-weight: 600;
                 color: #ffd700;
                 margin: 40px;
+                margin-top: 0;
                 text-shadow: #ceaf00 0 0 2px;
             }
         }
@@ -65,12 +67,12 @@
 <body>
     <button class="button" id="BtnClick">BUTTON</button>
     <div>
-        <span class="text">
+        <div class="text">
             MONEY:
             <span id="counter">
                 0
             </span>
-        </span>
+        </div>
     </div>
     <script>
         'use strict';
