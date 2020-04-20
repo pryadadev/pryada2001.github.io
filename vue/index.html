@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Носки</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="nav-bar"></div>
+
+    <div id="app">
+        <div class="product">
+
+            <div class="product-image">
+                <img v-bind:src="image" >
+            </div>
+
+            <div class="product-info">
+                <h1>{{ product }}</h1>
+                <p v-if="inStock > 10">Есть в наличии</p>
+                <p v-else-if="inStock <= 10 && inStock > 0">Осталось мало</p>
+                <p v-else>Нет в наличии</p>
+                <p v-show="onSale">Скидка</p>
+
+                <ul>
+                    <li v-for="detail in details">{{ detail }}</li>
+                </ul>
+
+                
+                    <button class="changeColor" v-on:click="updateProduct(variant.variantImage)" v-for="variant in variants" :key="variant.variantId">
+                        {{ variant.variantColor }}
+                    </button>
+                
+
+                <button class="AddToCart" v-on:click="addToCart">Добавить в корзину</button>
+                <div class="cart">
+                    <p>Корзина({{cart}})</p>
+                </div>
+            </div>
+        
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="main.js"></script>
+</body>
+</html>
