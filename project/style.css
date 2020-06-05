@@ -339,7 +339,6 @@ body {
 }
 
 .task {
-    margin-left: 20px;
     margin-top: 50px;
     font-size: 1.1rem;
     line-height: 1.4rem;
@@ -392,12 +391,15 @@ input.inputAnswer:focus {
     background: #fff;
     padding-top: 40px;
     padding-bottom: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
     width: 970px;
     margin: auto;
     position: relative;
     top:-20px;
     z-index: -1000;
     border: 1px solid gray;
+    box-sizing: border-box;
 }
 
 .graph1 {
@@ -550,6 +552,17 @@ input.inputAnswerInTable:focus {
     left: -400px;
 }
 
+.task18drawing {
+    transform: scale(0.5, 0.5);
+    position: absolute;
+    top: -50px;
+    left: -200px;
+}
+
 .task15Answer {
     margin-top: 360px;
+}
+
+.task18Answer {
+    margin-top: 320px;
 }
