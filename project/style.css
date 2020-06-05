@@ -1,0 +1,555 @@
+@import url('https://fonts.googleapis.com/css2?family=Muli:wght@400;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+body {
+    margin: 0;
+    background-color: #eeeeee;
+}
+
+.dividingStripLeft, .dividingStripRight {
+    width: 3px;
+    height: 4000px;
+    background-color: black;
+    position: absolute;
+    z-index: 1000;
+    left: 270px;
+}
+
+.dividingStripRight {
+    left: 1240px;
+}
+
+.menu {
+    height: 62px;
+    width: 100%;
+    background-color: #eeeeee;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+.menuBlock {
+    width: auto;
+    height: 100%;
+    box-sizing: border-box;
+    display: inline-block;
+    float: left;
+}
+
+.menuBlock1 {
+    margin-left: 18vw;
+    margin-right: 40px;
+    padding: 10px;
+    font-size: 2rem;
+    font-family: 'Muli', sans-serif;
+    color: rgba(255, 0, 0, 0.7);
+    font-weight: 900;
+}
+
+.menuBlock2 {
+    padding: 16px;
+    font-size: 1.5rem;
+    font-family: 'Muli', sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.058rem;
+    color: rgba(255, 0, 0, 0.7);
+}
+
+.menuBlock3, .menuBlock4, .menuBlock5 {
+    padding: 16px;
+    font-size: 1.5rem;
+    font-family: 'Muli', sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.058rem;
+    color: gray;
+}
+
+.menuBlock2, .menuBlock3, .menuBlock4 {
+    margin-right: 10px;
+}
+
+.gradient {
+    width: 100%;
+    height: 200px;
+    background: #d5f3fe; /* Для старых браузров */
+    background: linear-gradient(to right, #6fb5ce, #b1eaff);
+}
+
+.gradientBlock {
+    height: 110px;
+    width: 250px;
+    display: inline-block;
+    border-radius: 15px;
+    float: left;
+    margin-top: 40px;
+}
+
+.gradientBlock1 {
+    margin-left: 280px;
+    box-shadow: 0 0 7px rgb(96, 23, 165);
+}
+
+.gradientBlock2 {
+    margin-left: 50px;
+    box-shadow: 0 0 7px rgb(0, 121, 60);
+}
+
+.gradientBlock3 {
+    margin-left: 50px;
+    box-shadow: 0 0 7px rgb(22, 194, 22);
+}
+
+.gradientBlockIcon {
+    display: inline-block;
+    float: left;
+    width: 64px;
+    height: 64px;
+    background-color: aqua;
+    margin-left: 8px;
+}
+
+.gradientBlock1Icon {
+    background: 50%/cover url("target.png");
+    margin-top: 17px;
+}
+
+.gradientBlock2Icon {
+    width: 60px;
+    height: 60px;
+    margin-top: 24px;
+    background: 50%/cover url("five.png");
+}
+
+.gradientBlock3Icon {
+    background: 50%/cover url("checklist.png");
+    margin-top: 17px;
+}
+
+.gradientBlockText {
+    display: inline-block;
+    margin-left: 14px;
+    font-family: 'Muli', sans-serif;
+    font-size: 1.52rem;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.74);
+    margin-top: 20px;
+    float: left;
+}
+
+.gradientBlock1Text {
+    font-size: 1.65rem;
+    margin-top: 15px;
+}
+
+.linkBlock {
+    width: 300px;
+    height: 280px;
+    border: 2px solid rgb(255, 0, 200);
+    display: inline-block;
+    box-sizing: border-box;
+    float: left;
+}
+
+.linkBlock1 {
+    margin-left: 280px;
+    border: 2px solid rgb(66,182,231);
+    background: rgb(66,182,231); /* Для старых браузров */
+    background: linear-gradient(to right, rgb(66,182,231), rgb(147, 213, 247));
+}
+
+.linkBlock2 {
+    border: 2px solid rgb(255, 182, 194);
+    background: rgb(255, 182, 194); /* Для старых браузров */
+    background: linear-gradient(to right, rgb(255, 182, 194), rgba(255, 192, 203, 0.4));
+}
+
+.linkBlock4 {
+    border: 2px solid blueviolet;
+    background: blueviolet; /* Для старых браузров */
+    background: linear-gradient(to right, blueviolet, rgba(137, 43, 226, 0.55));
+}
+
+.linkBlock5 {
+    border: 2px solid rgb(241,90,105);
+    background: rgb(241,90,105); /* Для старых браузров */
+    background: linear-gradient(to right, rgb(241,90,105), rgba(241, 90, 105, 0.45));
+}
+
+.linkBlock3 {
+    border: 2px solid rgba(252, 255, 60, 0.8);
+    background: rgba(252, 255, 60, 0.8); /* Для старых браузров */
+    background: linear-gradient(to right, rgba(252, 255, 60, 0.8), rgba(252, 255, 60, 0.5));
+}
+
+.linkBlock6 {
+    border: 2px solid rgba(172, 255, 47, 0.8);
+    background: rgba(172, 255, 47, 0.8); /* Для старых браузров */
+    background: linear-gradient(to right, rgba(172, 255, 47, 0.8), rgba(172, 255, 47, 0.5));
+}
+
+.linkBlock4 {
+    margin-left: 280px;
+}
+
+.linkBlock1, .linkBlock2, .linkBlock3 {
+    margin-bottom: 26px;
+    margin-top: 50px;
+}
+
+.linkBlock1, .linkBlock2, .linkBlock4, .linkBlock5 {
+    margin-right: 26px;
+}
+
+.linkBlockIcon {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    margin-left: 200px;
+    margin-top: 95px;
+    background-color: green;
+    position: absolute;
+}
+
+.linkBlock3Icon, .linkBlock6Icon {
+    background: 50%/cover url("checklist.png");
+}
+
+.linkBlockText {
+    display: inline-block;
+    font-family: 'Roboto', sans-serif;
+}
+
+.linkBlock1Text, .linkBlock4Text, .linkBlock2Text, .linkBlock5Text {
+    font-size: 1.7rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    margin-top: 110px;
+    margin-left: 20px;
+    color: white;
+}
+
+.linkBlock3Text, .linkBlock6Text {
+    margin-left: 24px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 2.2rem;
+    margin-top: 105px;
+    color: rgba(0, 0, 0, 0.75);
+    line-height: 2.2rem;
+}
+
+.linkBlock6Text {
+    margin-top: 80px;
+}
+
+.linkBlock6TextSpan {
+    font-size: 2.75rem;
+    line-height: 2.75rem;
+}
+
+.linkBlock3TextSpan {
+    font-size: 1.8rem;
+}
+
+.linkBlock2Text, .linkBlock5Text {
+    color: rgba(0, 0, 0, 0.75);
+    margin-top: 95px;
+    font-size: 1.55rem;
+    margin-left: 24px;
+}
+
+.linkBlock5Text {
+    margin-top: 70px;
+}
+
+.linkBlock2TextSpan1, .linkBlock5TextSpan1 {
+    font-size: 2.12rem;
+}
+
+.linkBlock2TextSpan2 {
+    font-size: 1.72rem;
+    line-height: 1.55rem;
+}
+
+.linkBlock5TextSpan2 {
+    font-size: 2.64rem;
+    line-height: 2.4rem;
+}
+
+.linkBlock4Text {
+    font-size: 2.6rem;
+    line-height: 2.5rem;
+    color: rgb(255, 255, 255);
+    margin-top: 80px;
+}
+
+.linkBlock1TextOGE, .linkBlock4TextOGE {
+    font-size: 5.35rem;
+    font-weight: 900;
+}
+
+.linkBlock1Icon, .linkBlock4Icon {
+    background: 50%/cover url("target.png");
+    width: 85px;
+    height: 85px;
+    margin-top: 90px;
+    margin-left: 195px;
+}
+
+.linkBlock2Icon, .linkBlock5Icon {
+    background: 50%/cover url("five.png");
+}
+
+.variantNumber {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.oge_math {
+    font-family: 'Roboto', sans-serif;
+}
+
+.header {
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.partNumber {
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+.partName {
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.taskNumber {
+    font-weight: bold;
+}
+
+.task {
+    margin-left: 20px;
+    margin-top: 50px;
+    font-size: 1.1rem;
+    line-height: 1.4rem;
+}
+
+.taskAnswer {
+    margin-top: 20px;
+}
+
+.inputAnswer {
+    padding: 2px;
+    font-size: 1.1rem;
+    border: 1px solid #69f;
+    border-radius: 4px;
+    box-shadow: inset 0 0 5px rgba(102, 153, 255, 0.3);
+}
+
+input.inputAnswer:focus {
+    border: 2px solid #69f;
+    box-shadow: inset 0 0 5px rgba(102, 153, 255, 0.3);
+    outline: none;
+}
+
+.task3ans1 {
+    width: 80px;
+    height: 31.667px;
+    background: 50%/cover url("task3ans1.png");
+    position: absolute;
+}
+
+.answerVariants {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.answerVariant {
+    display: inline-block;
+    margin-right: 40px;
+}
+
+.fract {
+    font-size: 1.5rem;
+}
+
+.oge {
+    background: rgb(255, 238, 238);
+}
+
+.oge_math {
+    background: #fff;
+    padding-top: 40px;
+    padding-bottom: 100px;
+    width: 970px;
+    margin: auto;
+    position: relative;
+    top:-20px;
+    z-index: -1000;
+    border: 1px solid gray;
+}
+
+.graph1 {
+    width: 222px;
+    height: 225px;
+    background: 50%/contain url("graph1.png");
+    display: inline-block;
+}
+
+.graph2 {
+    width: 224.25px;
+    height: 225px;
+    background: 50%/contain url("graph2.png");
+    display: inline-block;
+}
+
+.graph3 {
+    width: 224.25px;
+    height: 225px;
+    background: 50%/contain url("graph3.png");
+    display: inline-block;
+}
+
+.graph {
+    margin-top: 30px;
+    margin-right: 40px;
+    border: 1px solid gray;
+}
+
+.graphLetter {
+    display: inline-block;
+    position: relative;
+    margin-right: 6px;
+    top: -210px;
+}
+
+.graphLetter1 {
+    margin-left: 10px;
+}
+.tableAnswer {
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 8px;
+}
+
+.inputAnswerInTable {
+    padding: 2px;
+    font-size: 1.1rem;
+    border: 1px solid #69f;
+    border-radius: 4px;
+    box-shadow: inset 0 0 5px rgba(102, 153, 255, 0.3);
+    width: 30px;
+    text-align: center;
+}
+
+input.inputAnswerInTable:focus {
+    border: 2px solid #69f;
+    box-shadow: inset 0 0 5px rgba(102, 153, 255, 0.3);
+    outline: none;
+}
+
+.tableAnswerLetter {
+    padding: 1px 10px;
+    text-align: center;
+}
+
+.tableAnswerInput {
+    padding: 3px 5px;
+}
+
+.tmp1 {
+    display: inline-block;
+    position: relative;
+    top: -22px;
+}
+
+.partNameNext {
+    margin-top: 45px;
+    margin-bottom: 20px;
+}
+
+
+.task9img {
+    position: absolute;
+    transform: scale(0.6, 0.6);
+    left: 350px;
+    top: -70px;
+}
+
+.task10img {
+    position: absolute;
+    transform: scale(0.5, 0.5);
+    left: 430px;
+    top: -90px;
+}
+
+.task12img {
+    position: absolute;
+    transform: scale(0.35, 0.35);
+    left: 380px;
+    top: -130px;
+}
+
+.task {
+    position: relative;
+}
+
+.task9Answer {
+    margin-top: 45px;
+    margin-bottom: 50px;
+}
+
+.task10Answer {
+    margin-top: 65px;
+    margin-bottom: 50px;
+}
+
+.task12Answer {
+    margin-top: 65px;
+    margin-bottom: 50px;
+}
+
+.answerVariantBlock {
+    margin-top: 30px;
+}
+
+.answerVariantBlock1, .answerVariantBlock2 {
+    margin-bottom: 10px;
+}
+
+.task14Table th, .task14Table td {
+    padding: 0 10px;
+    text-align: center;
+}
+
+.task14Table {
+    margin-top: 20px;
+    margin-left: 240px;
+    margin-bottom: 20px;
+}
+
+.answerVariantsTask14 {
+    margin-left: 240px;
+}
+
+.task15drawing {
+    transform: scale(0.4, 0.4);
+    position: absolute;
+    top: -150px;
+    left: -400px;
+}
+
+.task15Answer {
+    margin-top: 360px;
+}
