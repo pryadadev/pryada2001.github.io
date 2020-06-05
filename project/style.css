@@ -20,7 +20,7 @@ body {
 
 .menu {
     height: 62px;
-    width: 100%;
+    width: 100vw;
     background-color: #eeeeee;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
     position: relative;
