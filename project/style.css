@@ -20,7 +20,7 @@ body {
 
 .menu {
     height: 62px;
-    width: 100vw;
+    width: 100%;
     background-color: #eeeeee;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
     position: relative;
@@ -385,12 +385,14 @@ input.inputAnswer:focus {
 
 .oge {
     background: rgb(255, 238, 238);
+    position: relative;
+    z-index: -10000;
 }
 
 .oge_math {
     background: #fff;
     padding-top: 40px;
-    padding-bottom: 100px;
+    padding-bottom: 50px;
     padding-left: 20px;
     padding-right: 20px;
     width: 970px;
@@ -565,4 +567,80 @@ input.inputAnswerInTable:focus {
 
 .task18Answer {
     margin-top: 320px;
+}
+
+.partNumberNext {
+    margin-top: 50px;
+}
+
+.sendAnswers {
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-color: rgba(220, 0, 0, 1);
+    background-image: linear-gradient(to top left, rgba(0, 0, 0, .2), rgba(0, 0, 0, .2) 30%, rgba(0, 0, 0, 0));
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6), inset -2px -2px 3px rgba(0, 0, 0, .6);
+    display: block;
+    margin: auto;
+    margin-top: 50px;
+    outline: none;
+}
+
+.sendAnswers:hover {
+    background-color: rgba(255, 0, 0, 1);
+}
+
+.sendAnswers:active {
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6), inset 2px 2px 3px rgba(0, 0, 0, .6);
+}
+
+.yourScore {
+    text-align: center;
+}
+
+.greenBG {
+    background: #c0ffc0;
+}
+
+.redBG {
+    background: #ffc0c0;
+}
+
+table {
+    background-color: rgb(80, 80, 80);
+}
+td {
+    background-color: white;
+}
+th {
+    background-color: white;
+}
+
+.scoreTable {
+    margin: auto;
+    margin-top: 20px;
+}
+
+.scoreTable td {
+    padding: 0px 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.scoreTable th {
+    padding: 0px 10px;
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.yourScore {
+    margin-top: 20px;
 }
