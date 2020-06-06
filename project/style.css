@@ -306,10 +306,6 @@ body {
     font-weight: bold;
 }
 
-.oge_math {
-    font-family: 'Roboto', sans-serif;
-}
-
 .header {
     width: 100%;
     text-align: center;
@@ -383,18 +379,18 @@ input.inputAnswer:focus {
     font-size: 1.5rem;
 }
 
-.oge {
+.background {
     background: rgb(255, 238, 238);
     position: relative;
     z-index: -10000;
 }
 
-.oge_math {
+.mainground {
     background: #fff;
     padding-top: 40px;
     padding-bottom: 50px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
     width: 970px;
     margin: auto;
     position: relative;
@@ -402,6 +398,7 @@ input.inputAnswer:focus {
     z-index: -1000;
     border: 1px solid gray;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
 .graph1 {
@@ -643,4 +640,28 @@ th {
 
 .yourScore {
     margin-top: 20px;
+}
+
+.sectionName {
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-left: 50px;
+}
+
+.topicName {
+    font-weight: bold;
+    font-size: 1.3rem;
+    margin-top: 50px;
+    margin-left: 30px;
+}
+
+.topic {
+    margin-left: 20px;
+    line-height: 1.5rem;
+}
+
+.subList {
+    margin-left: 40px;
+    line-height: 1.5rem;
+    margin-top: -15px;
 }
