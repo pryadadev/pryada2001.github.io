@@ -646,6 +646,7 @@ th {
     font-weight: bold;
     font-size: 1.5rem;
     margin-left: 50px;
+    margin-top: 60px;
 }
 
 .topicName {
@@ -664,4 +665,8 @@ th {
     margin-left: 40px;
     line-height: 1.5rem;
     margin-top: -15px;
+}
+
+.formula {
+    line-height: 1.8rem;
 }
