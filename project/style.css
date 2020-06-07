@@ -670,3 +670,52 @@ th {
 .formula {
     line-height: 1.8rem;
 }
+
+.linkBox {
+    margin-top: 30px;
+    width: 900px;
+    height: 600px;
+}
+
+.linkBox1, .linkBox2, .linkBox3 {
+    width: 275px;
+    height: 400px;
+    display: inline-block;
+    color: white;
+    text-shadow: 0 0 3px black;
+    text-align: center;
+    padding-top: 200px;
+    font-size: 2.5rem;
+    transition: .5s;
+}
+
+.linkBox3:hover {
+    font-size: 3rem;
+    text-shadow: 15px 15px 10px black;
+}
+
+.linkBox2:hover {
+    font-size: 3.3rem;
+    text-shadow: 15px 15px 10px black;
+}
+
+.linkBox1:hover {
+    font-size: 4rem;
+    text-shadow: 15px 15px 10px black;
+}
+
+.linkBox1 {
+    background-color: chartreuse;
+    float: left;
+}
+
+.linkBox2 {
+    background-color: coral;
+    margin-left: 37.5px;
+    margin-right: 37.5px;
+}
+
+.linkBox3 {
+    background-color: deepskyblue;
+    float: right;
+}
