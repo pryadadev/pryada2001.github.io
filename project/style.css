@@ -525,7 +525,7 @@ input.inputAnswerInTable:focus {
     margin-top: 30px;
 }
 
-.answerVariantBlock1, .answerVariantBlock2 {
+.answerVariantBlock1, .answerVariantBlock2, .answerVariantBlock3 {
     margin-bottom: 10px;
 }
 
@@ -795,4 +795,46 @@ th {
 
 .task9AnswerGeometry {
     margin-top: 100px;
+}
+
+.infoTable td, .infoTable th {
+    padding: 0 10px;
+    text-align: center;
+}
+
+.infoTable {
+    margin-top: 15px;
+}
+
+.task3AnswerRealMath {
+    margin-top: 80px;
+}
+
+.task3drawingRealMath {
+    position: absolute;
+    transform: scale(0.5,0.5);
+    top: -60px;
+    left: 510px;
+}
+
+.task4drawingRealMath {
+    transform: scale(0.3, 0.3);
+    position: absolute;
+    top: -200px;
+    left: -350px;
+}
+
+.task9drawingRealMath {
+    transform: scale(0.4, 0.4);
+    position: absolute;
+    top: -140px;
+    left: -330px;
+}
+
+.descrContinueTask4 {
+    margin-top: 300px;
+}
+
+.discrContinueTask6, .discrContinueTask7, .discrContinueTask10 {
+    margin-top: 20px;
 }
