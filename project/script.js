@@ -1,5 +1,5 @@
 'use strict';
-btnCompleteOGEMath.addEventListener('click', function(e) {
+btnComplete.addEventListener('click', function(e) {
     let answer = [], trueAnswer = ['7,79', '4', '4', '-0,6;0,6', '231', '7', '8', '2', '10', '69', '112', '195', '12', '4', '10', '2880', '12', '1', '0,125', '60', '-7;1;7', '10', '-6;6', '9,225', '15'];
     let countCompleteTasksVariable = 0, countPrimaryScoreVariable = 0, yourMarkVariable = 0;
     let allInputs = document.getElementsByClassName('inputAnswer');
@@ -44,7 +44,7 @@ btnCompleteOGEMath.addEventListener('click', function(e) {
     for (let i = 0; i < 3; ++i) {
         (allPartNumbers[i]).classList.add('hidden');
     }
-    btnCompleteOGEMath.classList.add('hidden');
+    btnComplete.classList.add('hidden');
     yourScoreId.classList.remove('hidden');
     scoreTableId.classList.remove('hidden');
 });

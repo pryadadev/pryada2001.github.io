@@ -719,3 +719,80 @@ th {
     background-color: deepskyblue;
     float: right;
 }
+
+.task1drawing {
+    transform: scale(0.5,0.5);
+    position: absolute;
+    top: -70px;
+    left: 320px;
+}
+
+.task2drawing {
+    position: absolute;
+    transform: scale(0.5,0.5);
+    top: -80px;
+    left: 460px;
+}
+
+.task4drawing {
+    position: absolute;
+    transform: scale(0.5,0.5);
+    top: -60px;
+    left: 430px;
+}
+
+.task6drawing {
+    position: absolute;
+    transform: scale(0.5,0.5);
+    top: -40px;
+    left: 430px;
+}
+
+.task7drawing {
+    position: absolute;
+    transform: scale(0.5,0.5);
+    top: -55px;
+    left: 420px;
+}
+
+.task8drawing {
+    position: absolute;
+    transform: scale(0.6,0.6);
+    top: 0px;
+    left: 420px;
+}
+
+.task9drawingGeometry {
+    position: absolute;
+    transform: scale(0.6,0.6);
+    top: -20px;
+    left: 430px;
+}
+
+.task1Answer {
+    margin-top: 100px;
+}
+
+.task2Answer {
+    margin-top: 100px;
+}
+
+.task4Answer {
+    margin-top: 100px;
+}
+
+.task6Answer{
+    margin-top: 95px;
+}
+
+.task7Answer {
+    margin-top: 100px;
+}
+
+.task8Answer {
+    margin-top: 90px;
+}
+
+.task9AnswerGeometry {
+    margin-top: 100px;
+}

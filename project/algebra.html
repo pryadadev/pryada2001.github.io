@@ -68,9 +68,9 @@
         </div>
         <div class="task">
             <span class="taskNumber">10.</span> Найдите значение выражения <span class="fract">\(\,{3y \over 5x}\)</span> \(-\) <span class="fract">\({9y^2 + 25x^2 \over 15xy}\)</span> \(+\) <span class="fract">\({5x-3y\over 3y}\,\)</span> при \(\,x = 12,\,y = 23.\)
-            <div class="taskAnswer">Ответ: <input type="text" class="inputAnswer" id="inputTask09"></div>
+            <div class="taskAnswer">Ответ: <input type="text" class="inputAnswer" id="inputTask10"></div>
         </div>
-        <input class="sendAnswers" type="button" value="Завершить тест" id="btnCompleteAlgebra">
+        <input class="sendAnswers" type="button" value="Завершить тест" id="btnComplete">
         <div class="yourScore hidden" id="yourScoreId">
             <div class="variantNumber">Вы решили <span id="countCompleteTasks"></span> из 10 заданий</div>
         </div>
@@ -90,7 +90,8 @@
 
     </main>
     <script>
-        btnCompleteAlgebra.addEventListener('click', function(e) {
+        'use strict';
+        btnComplete.addEventListener('click', function(e) {
             let answer = [], trueAnswer = ['0,000056', '2', '2,5;4', '-30,4', '64', '0,5302', '2', '-1,5', '704', '-1'];
             let countCompleteTasksVariable = 0;
             let allInputs = document.getElementsByClassName('inputAnswer');
@@ -113,7 +114,7 @@
             for (let i = 0; i < 10; ++i) {
                 (allTasks[i]).classList.add('hidden');
             }
-            btnCompleteAlgebra.classList.add('hidden');
+            btnComplete.classList.add('hidden');
             yourScoreId.classList.remove('hidden');
             scoreTableId.classList.remove('hidden');
         });
