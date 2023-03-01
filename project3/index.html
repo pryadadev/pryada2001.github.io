@@ -4,6 +4,7 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon" />
         <title>Conquest</title>
         <link rel="stylesheet" href="./css/style.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -14,414 +15,495 @@
         />
     </head>
     <body>
-        <header class="header-menu">
-            <a class="logo-name" href="#logo">
-                <svg
-                    class="logo-svg"
-                    width="20"
-                    height="20"
-                    viewBox="0 0 20 20"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                >
-                    <path
-                        d="M18.6818 12.5344C18.1028 14.3757 16.8142 16.6577 14.2917 18.0103C12.7282 18.8487 11.0306 19.1833 9.38314 19.071L9.42568 0.942909C9.47777 0.938618 9.53005 0.93472 9.58253 0.931229C10.0681 0.927688 10.6665 0.949319 11.28 1.01902C11.5536 1.05012 11.8247 1.0902 12.0863 1.1403C12.6587 1.27589 13.2174 1.46652 13.754 1.70967C15.5103 2.50552 17.0281 3.86323 18.0099 5.69434C18.8203 7.2056 19.1598 8.84194 19.0803 10.437C19.0472 10.9746 18.9268 11.7156 18.6818 12.5344ZM8.42537 1.07488L8.38343 18.947C5.74393 18.4708 3.34092 16.838 1.97576 14.292C-0.398422 9.86431 1.2663 4.35026 5.694 1.97607C6.26708 1.66878 7.24635 1.28822 8.42537 1.07488Z"
-                        stroke="url(#paint0_linear_0_497)"
-                    />
-                    <defs>
-                        <linearGradient
-                            id="paint0_linear_0_497"
-                            x1="0.755987"
-                            y1="8.7235"
-                            x2="20.9646"
-                            y2="9.99221"
-                            gradientUnits="userSpaceOnUse"
-                        >
-                            <stop offset="0.288448" stop-color="#555248" />
-                            <stop offset="0.780176" stop-color="#1B1A17" stop-opacity="0" />
-                        </linearGradient>
-                    </defs>
-                </svg>
-                <div class="name">conquest</div>
-            </a>
-
-            <nav class="header-text-nav">
-                <ul class="header-text-nav-list">
-                    <li><a class="header-text-nav-link" href="#catalog">Каталог</a></li>
-                    <li><a class="header-text-nav-link" href="#promo">Акции</a></li>
-                    <li><a class="header-text-nav-link" href="#delivery">Доставка</a></li>
-                    <li><a class="header-text-nav-link" href="#contacts">Контакты</a></li>
-                </ul>
-            </nav>
-
-            <nav class="header-icon-nav">
-                <ul class="header-text-nav-list">
-                    <li>
-                        <a class="header-text-nav-link" href="#search">
-                            <svg
-                                class="header-text-nav-link-svg"
-                                width="16"
-                                height="16"
-                                viewBox="0 0 16 16"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
+        <div class="container">
+            <header class="header-menu">
+                <a class="logo-name" href="#logo">
+                    <svg
+                        class="logo-svg"
+                        width="20"
+                        height="20"
+                        viewBox="0 0 20 20"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <path
+                            d="M18.6818 12.5344C18.1028 14.3757 16.8142 16.6577 14.2917 18.0103C12.7282 18.8487 11.0306 19.1833 9.38314 19.071L9.42568 0.942909C9.47777 0.938618 9.53005 0.93472 9.58253 0.931229C10.0681 0.927688 10.6665 0.949319 11.28 1.01902C11.5536 1.05012 11.8247 1.0902 12.0863 1.1403C12.6587 1.27589 13.2174 1.46652 13.754 1.70967C15.5103 2.50552 17.0281 3.86323 18.0099 5.69434C18.8203 7.2056 19.1598 8.84194 19.0803 10.437C19.0472 10.9746 18.9268 11.7156 18.6818 12.5344ZM8.42537 1.07488L8.38343 18.947C5.74393 18.4708 3.34092 16.838 1.97576 14.292C-0.398422 9.86431 1.2663 4.35026 5.694 1.97607C6.26708 1.66878 7.24635 1.28822 8.42537 1.07488Z"
+                            stroke="url(#paint0_linear_0_497)"
+                        />
+                        <defs>
+                            <linearGradient
+                                id="paint0_linear_0_497"
+                                x1="0.755987"
+                                y1="8.7235"
+                                x2="20.9646"
+                                y2="9.99221"
+                                gradientUnits="userSpaceOnUse"
                             >
-                                <path
-                                    d="M15.8041 14.8638L11.9576 11.0172C12.911 9.85475 13.4857 8.36576 13.4857 6.74289C13.4857 3.02042 10.4653 0 6.74286 0C3.01714 0 0 3.02042 0 6.74289C0 10.4654 3.01714 13.4858 6.74286 13.4858C8.36571 13.4858 9.85143 12.9144 11.0139 11.9609L14.8604 15.8042C15.1216 16.0654 15.5429 16.0654 15.8041 15.8042C16.0653 15.5462 16.0653 15.1217 15.8041 14.8638ZM6.74286 12.1437C3.76163 12.1437 1.33878 9.72087 1.33878 6.74289C1.33878 3.76492 3.76163 1.33878 6.74286 1.33878C9.72082 1.33878 12.1469 3.76492 12.1469 6.74289C12.1469 9.72087 9.72082 12.1437 6.74286 12.1437Z"
-                                    fill="#1B1A17"
-                                />
-                            </svg>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="header-text-nav-link notification" href="#favorite">
-                            <svg
-                                class="header-text-nav-link-svg"
-                                width="21"
-                                height="18"
-                                viewBox="0 0 21 18"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                            >
-                                <path
-                                    d="M19.9686 5.77107C19.6912 3.00626 17.5306 1.00033 14.8266 1.00033C13.0251 1.00033 11.3757 1.87836 10.4475 3.28559C9.5278 1.86016 7.94595 1 6.17336 1C3.4697 1 1.30868 3.00593 1.0317 5.77074C1.00978 5.89286 0.919889 6.53558 1.19321 7.58372C1.58712 9.09552 2.49699 10.4706 3.82378 11.5595L10.4431 17.0001L17.1761 11.5598C18.5029 10.4706 19.4128 9.09586 19.8067 7.58372C20.08 6.53591 19.9902 5.89319 19.9686 5.77107ZM19.0953 7.43214C18.7357 8.81289 17.9022 10.0709 16.6872 11.0677L10.4475 16.1098L4.31489 11.069C3.09772 10.0702 2.26459 8.81256 1.90466 7.43181C1.64595 6.43993 1.75229 5.87962 1.75265 5.87598L1.75813 5.84255C1.99565 3.42028 3.85229 1.66191 6.17336 1.66191C7.88602 1.66191 9.39369 2.61507 10.1092 4.14905L10.4457 4.87153L10.7822 4.14905C11.4864 2.63857 13.0737 1.66224 14.8269 1.66224C17.1476 1.66224 19.0047 3.42062 19.2469 5.87433C19.2476 5.87962 19.354 6.44026 19.0953 7.43214Z"
-                                    fill="#1B1A17"
-                                    stroke="#1B1A17"
-                                    stroke-width="0.75"
-                                />
-                            </svg>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="header-text-nav-link" href="#cart">
-                            <svg
-                                class="header-text-nav-link-svg"
-                                width="18"
-                                height="16"
-                                viewBox="0 0 18 16"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                            >
-                                <path
-                                    d="M17.8961 3.05166C17.7931 2.91219 17.6273 2.82598 17.4472 2.81871L6.28162 2.36415C5.96126 2.35091 5.69355 2.58451 5.67986 2.88567C5.66624 3.18672 5.91317 3.44109 6.232 3.45403L16.6416 3.87785L14.5949 9.90927H5.48658L3.84103 1.44689C3.80486 1.26142 3.67004 1.10669 3.4841 1.03779L0.788965 0.037775C0.491928 -0.072061 0.156743 0.065738 0.0400874 0.345939C-0.0763672 0.626293 0.0694931 0.943056 0.36637 1.05323L2.76277 1.94238L4.43736 10.5533C4.48784 10.8122 4.72671 11.0002 5.0055 11.0002H5.28328L4.64896 12.6643C4.59587 12.8037 4.61775 12.9585 4.7081 13.0796C4.79833 13.2007 4.94508 13.2728 5.10173 13.2728H5.54664C5.27095 13.5625 5.10173 13.9441 5.10173 14.3637C5.10173 15.266 5.87913 16.0001 6.83433 16.0001C7.78953 16.0001 8.56693 15.266 8.56693 14.3637C8.56693 13.9441 8.39771 13.5625 8.12206 13.2728H11.8996C11.6237 13.5625 11.4546 13.9441 11.4546 14.3637C11.4546 15.266 12.2318 16.0001 13.1872 16.0001C14.1426 16.0001 14.9198 15.266 14.9198 14.3637C14.9198 13.9441 14.7506 13.5625 14.475 13.2728H15.016C15.2819 13.2728 15.4973 13.0693 15.4973 12.8182C15.4973 12.5671 15.2819 12.3637 15.016 12.3637H5.78652L6.30624 11H15.016C15.2672 11 15.4894 10.8468 15.5659 10.6211L17.9723 3.53C18.0275 3.36816 17.9992 3.19121 17.8961 3.05166ZM6.83437 15.0912C6.40968 15.0912 6.0643 14.765 6.0643 14.3639C6.0643 13.9628 6.40968 13.6366 6.83437 13.6366C7.25906 13.6366 7.6044 13.9628 7.6044 14.3639C7.6044 14.765 7.25906 15.0912 6.83437 15.0912ZM13.1872 15.0912C12.7625 15.0912 12.4171 14.765 12.4171 14.3639C12.4171 13.9628 12.7625 13.6366 13.1872 13.6366C13.6119 13.6366 13.9572 13.9628 13.9572 14.3639C13.9572 14.765 13.6119 15.0912 13.1872 15.0912Z"
-                                    fill="#1B1A17"
-                                />
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
+                                <stop offset="0.288448" stop-color="#555248" />
+                                <stop offset="0.780176" stop-color="#1B1A17" stop-opacity="0" />
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                    <div class="name">conquest</div>
+                </a>
 
-        <main>
-            <section class="section-hero">
-                <div class="hero-text-box">
-                    <h1 class="hero-header">Весна/Лето 2019</h1>
-                    <h2 class="hero-subheader">Коллекция</h2>
-                    <p class="hero-description">Швейцарские часы в наличии в Москве и с доставкой по всему миру</p>
-                    <a href="#catalog" class="btn btn-hero-catalog">Смотреть каталог</a>
-                </div>
-                <div class="hero-img">
-                    <div class="relative-container">
-                        <div class="hero-ellipse">
-                            <div class="hero-price">22 000 &#8381;</div>
-                            <div class="hero-size">28 мм диаметр</div>
-                            <div class="hero-overlapping-box"></div>
-                            <img src="./img/watch_main.png" alt="Швейцарские часы Rado серого цвета" />
+                <nav class="header-text-nav">
+                    <ul class="header-text-nav-list">
+                        <li><a class="header-text-nav-link" href="#catalog">Каталог</a></li>
+                        <li><a class="header-text-nav-link" href="#promo">Акции</a></li>
+                        <li><a class="header-text-nav-link" href="#delivery">Доставка</a></li>
+                        <li><a class="header-text-nav-link" href="#contacts">Контакты</a></li>
+                    </ul>
+                </nav>
+
+                <nav class="header-icon-nav">
+                    <ul class="header-text-nav-list">
+                        <li>
+                            <a class="header-text-nav-link" href="#search">
+                                <svg
+                                    class="header-text-nav-link-svg"
+                                    width="16"
+                                    height="16"
+                                    viewBox="0 0 16 16"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M15.8041 14.8638L11.9576 11.0172C12.911 9.85475 13.4857 8.36576 13.4857 6.74289C13.4857 3.02042 10.4653 0 6.74286 0C3.01714 0 0 3.02042 0 6.74289C0 10.4654 3.01714 13.4858 6.74286 13.4858C8.36571 13.4858 9.85143 12.9144 11.0139 11.9609L14.8604 15.8042C15.1216 16.0654 15.5429 16.0654 15.8041 15.8042C16.0653 15.5462 16.0653 15.1217 15.8041 14.8638ZM6.74286 12.1437C3.76163 12.1437 1.33878 9.72087 1.33878 6.74289C1.33878 3.76492 3.76163 1.33878 6.74286 1.33878C9.72082 1.33878 12.1469 3.76492 12.1469 6.74289C12.1469 9.72087 9.72082 12.1437 6.74286 12.1437Z"
+                                        fill="#1B1A17"
+                                    />
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="header-text-nav-link notification" href="#favorite">
+                                <svg
+                                    class="header-text-nav-link-svg"
+                                    width="21"
+                                    height="18"
+                                    viewBox="0 0 21 18"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M19.9686 5.77107C19.6912 3.00626 17.5306 1.00033 14.8266 1.00033C13.0251 1.00033 11.3757 1.87836 10.4475 3.28559C9.5278 1.86016 7.94595 1 6.17336 1C3.4697 1 1.30868 3.00593 1.0317 5.77074C1.00978 5.89286 0.919889 6.53558 1.19321 7.58372C1.58712 9.09552 2.49699 10.4706 3.82378 11.5595L10.4431 17.0001L17.1761 11.5598C18.5029 10.4706 19.4128 9.09586 19.8067 7.58372C20.08 6.53591 19.9902 5.89319 19.9686 5.77107ZM19.0953 7.43214C18.7357 8.81289 17.9022 10.0709 16.6872 11.0677L10.4475 16.1098L4.31489 11.069C3.09772 10.0702 2.26459 8.81256 1.90466 7.43181C1.64595 6.43993 1.75229 5.87962 1.75265 5.87598L1.75813 5.84255C1.99565 3.42028 3.85229 1.66191 6.17336 1.66191C7.88602 1.66191 9.39369 2.61507 10.1092 4.14905L10.4457 4.87153L10.7822 4.14905C11.4864 2.63857 13.0737 1.66224 14.8269 1.66224C17.1476 1.66224 19.0047 3.42062 19.2469 5.87433C19.2476 5.87962 19.354 6.44026 19.0953 7.43214Z"
+                                        fill="#1B1A17"
+                                        stroke="#1B1A17"
+                                        stroke-width="0.75"
+                                    />
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="header-text-nav-link" href="#cart">
+                                <svg
+                                    class="header-text-nav-link-svg"
+                                    width="18"
+                                    height="16"
+                                    viewBox="0 0 18 16"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M17.8961 3.05166C17.7931 2.91219 17.6273 2.82598 17.4472 2.81871L6.28162 2.36415C5.96126 2.35091 5.69355 2.58451 5.67986 2.88567C5.66624 3.18672 5.91317 3.44109 6.232 3.45403L16.6416 3.87785L14.5949 9.90927H5.48658L3.84103 1.44689C3.80486 1.26142 3.67004 1.10669 3.4841 1.03779L0.788965 0.037775C0.491928 -0.072061 0.156743 0.065738 0.0400874 0.345939C-0.0763672 0.626293 0.0694931 0.943056 0.36637 1.05323L2.76277 1.94238L4.43736 10.5533C4.48784 10.8122 4.72671 11.0002 5.0055 11.0002H5.28328L4.64896 12.6643C4.59587 12.8037 4.61775 12.9585 4.7081 13.0796C4.79833 13.2007 4.94508 13.2728 5.10173 13.2728H5.54664C5.27095 13.5625 5.10173 13.9441 5.10173 14.3637C5.10173 15.266 5.87913 16.0001 6.83433 16.0001C7.78953 16.0001 8.56693 15.266 8.56693 14.3637C8.56693 13.9441 8.39771 13.5625 8.12206 13.2728H11.8996C11.6237 13.5625 11.4546 13.9441 11.4546 14.3637C11.4546 15.266 12.2318 16.0001 13.1872 16.0001C14.1426 16.0001 14.9198 15.266 14.9198 14.3637C14.9198 13.9441 14.7506 13.5625 14.475 13.2728H15.016C15.2819 13.2728 15.4973 13.0693 15.4973 12.8182C15.4973 12.5671 15.2819 12.3637 15.016 12.3637H5.78652L6.30624 11H15.016C15.2672 11 15.4894 10.8468 15.5659 10.6211L17.9723 3.53C18.0275 3.36816 17.9992 3.19121 17.8961 3.05166ZM6.83437 15.0912C6.40968 15.0912 6.0643 14.765 6.0643 14.3639C6.0643 13.9628 6.40968 13.6366 6.83437 13.6366C7.25906 13.6366 7.6044 13.9628 7.6044 14.3639C7.6044 14.765 7.25906 15.0912 6.83437 15.0912ZM13.1872 15.0912C12.7625 15.0912 12.4171 14.765 12.4171 14.3639C12.4171 13.9628 12.7625 13.6366 13.1872 13.6366C13.6119 13.6366 13.9572 13.9628 13.9572 14.3639C13.9572 14.765 13.6119 15.0912 13.1872 15.0912Z"
+                                        fill="#1B1A17"
+                                    />
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+
+            <main>
+                <section class="section-hero">
+                    <div class="hero-text-box">
+                        <h1 class="hero-header">Весна/Лето 2019</h1>
+                        <h2 class="hero-subheader">Коллекция</h2>
+                        <p class="hero-description">Швейцарские часы в наличии в Москве и с доставкой по всему миру</p>
+                        <a href="#catalog" class="btn btn-hero-catalog">Смотреть каталог</a>
+                    </div>
+                    <div class="hero-img">
+                        <div class="relative-container">
+                            <div class="hero-ellipse">
+                                <div class="hero-price">22 000 &#8381;</div>
+                                <div class="hero-size">28 мм диаметр</div>
+                                <div class="hero-overlapping-box"></div>
+                                <img src="./img/watch_main.png" alt="Швейцарские часы Rado серого цвета" />
+                            </div>
                         </div>
                     </div>
-                </div>
-            </section>
-            <section class="section-popular">
-                <h2 class="popular-heading">
-                    Популярные модели
-                    <div class="heading-reference">
-                        <a href="#catalog">Смотреть все</a>
-                    </div>
-                </h2>
-                <div class="popular-models">
-                    <figure class="popular-model">
-                        <div class="popular-text-box">
-                            <div class="name">Rado</div>
-                            <div class="price">65 300 &#8381;</div>
+                </section>
+                <section class="section-popular">
+                    <h2 class="popular-heading">
+                        Популярные модели
+                        <div class="heading-reference">
+                            <a href="#catalog">Смотреть все</a>
                         </div>
-                        <div class="ellipse">
+                    </h2>
+                    <div class="popular-models">
+                        <figure class="popular-model">
+                            <div class="popular-text-box">
+                                <div class="name">Rado</div>
+                                <div class="price">65 300 &#8381;</div>
+                            </div>
+                            <div class="ellipse">
+                                <svg
+                                    width="313"
+                                    height="313"
+                                    viewBox="0 0 313 313"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <circle
+                                        cx="156.5"
+                                        cy="156.5"
+                                        r="156"
+                                        transform="matrix(-1 0 0 1 313 0)"
+                                        stroke="url(#paint0_linear_0_458)"
+                                    />
+                                    <defs>
+                                        <linearGradient
+                                            id="paint0_linear_0_458"
+                                            x1="6.65701e-07"
+                                            y1="163"
+                                            x2="313"
+                                            y2="161"
+                                            gradientUnits="userSpaceOnUse"
+                                        >
+                                            <stop stop-color="#E2D0C4" />
+                                            <stop offset="1" stop-color="#E2D0C4" stop-opacity="0" />
+                                        </linearGradient>
+                                    </defs>
+                                    <image
+                                        x="0"
+                                        y="0"
+                                        width="100%"
+                                        height="100%"
+                                        xlink:href="./img/watch_1.png"
+                                    ></image>
+                                </svg>
+                            </div>
+                            <div class="learn-more"><a href="#product-page">Подробнее</a></div>
+                        </figure>
+                        <figure class="popular-model">
+                            <div class="popular-text-box">
+                                <div class="name">Bvlgari</div>
+                                <div class="price">81 700 &#8381;</div>
+                            </div>
+                            <div class="ellipse">
+                                <svg
+                                    width="313"
+                                    height="313"
+                                    viewBox="0 0 313 313"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <circle
+                                        cx="156.5"
+                                        cy="156.5"
+                                        r="156"
+                                        transform="matrix(-1 0 0 1 313 0)"
+                                        stroke="url(#paint0_linear_0_458)"
+                                    />
+                                    <defs>
+                                        <linearGradient
+                                            id="paint0_linear_0_458"
+                                            x1="6.65701e-07"
+                                            y1="163"
+                                            x2="313"
+                                            y2="161"
+                                            gradientUnits="userSpaceOnUse"
+                                        >
+                                            <stop stop-color="#E2D0C4" />
+                                            <stop offset="1" stop-color="#E2D0C4" stop-opacity="0" />
+                                        </linearGradient>
+                                    </defs>
+                                    <image
+                                        x="0"
+                                        y="0"
+                                        width="100%"
+                                        height="100%"
+                                        xlink:href="./img/watch_2.png"
+                                    ></image>
+                                </svg>
+                            </div>
+                            <div class="learn-more"><a href="#product-page">Подробнее</a></div>
+                        </figure>
+                        <figure class="popular-model">
+                            <div class="popular-text-box">
+                                <div class="name">Bvlgari</div>
+                                <div class="price">72 700 &#8381;</div>
+                            </div>
+                            <div class="ellipse">
+                                <svg
+                                    width="313"
+                                    height="313"
+                                    viewBox="0 0 313 313"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <circle
+                                        cx="156.5"
+                                        cy="156.5"
+                                        r="156"
+                                        transform="matrix(-1 0 0 1 313 0)"
+                                        stroke="url(#paint0_linear_0_458)"
+                                    />
+                                    <defs>
+                                        <linearGradient
+                                            id="paint0_linear_0_458"
+                                            x1="6.65701e-07"
+                                            y1="163"
+                                            x2="313"
+                                            y2="161"
+                                            gradientUnits="userSpaceOnUse"
+                                        >
+                                            <stop stop-color="#E2D0C4" />
+                                            <stop offset="1" stop-color="#E2D0C4" stop-opacity="0" />
+                                        </linearGradient>
+                                    </defs>
+                                    <image
+                                        x="0"
+                                        y="0"
+                                        width="100%"
+                                        height="100%"
+                                        xlink:href="./img/watch_3.png"
+                                    ></image>
+                                </svg>
+                            </div>
+                            <div class="learn-more"><a href="#product-page">Подробнее</a></div>
+                        </figure>
+                    </div>
+                </section>
+
+                <section class="section-quality">
+                    <div class="filler-left-side"></div>
+                    <div class="slider">
+                        <div class="img-container">
+                            <img src="./img/photo_banner.jpg" alt="Циферблат часов" />
+                        </div>
+                        <div class="switcher">
+                            <a href="#previous-slide">
+                                <svg
+                                    width="7"
+                                    height="12"
+                                    viewBox="0 0 7 12"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path d="M6 1L1 6L6 11" stroke="#1B1A17" stroke-width="0.5" />
+                                </svg>
+                            </a>
+                            <div class="number">01</div>
+                            <a href="#next-slide">
+                                <svg
+                                    width="7"
+                                    height="12"
+                                    viewBox="0 0 7 12"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path d="M1 11L6 6L1 1" stroke="#1B1A17" stroke-width="0.5" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="text-box">
+                        <h2 class="header">Подлинное качество</h2>
+                        <p class="description">
+                            Все часы производятся в Швейцарии и имеют сертификаты качества. Настоящие швейцарские часы
+                            &mdash; это предмет гордости и престижа.
+                        </p>
+                        <a href="#catalog" class="btn btn-quality">Смотреть каталог</a>
+                    </div>
+                    <svg
+                        class="upper-ellipse"
+                        width="215"
+                        height="217"
+                        viewBox="0 0 215 217"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <circle
+                            cx="183.382"
+                            cy="34.3817"
+                            r="182.082"
+                            transform="rotate(-28.3485 183.382 34.3817)"
+                            stroke="url(#paint0_linear_0_503)"
+                        />
+                        <defs>
+                            <linearGradient
+                                id="paint0_linear_0_503"
+                                x1="0.799943"
+                                y1="41.965"
+                                x2="365.964"
+                                y2="39.6317"
+                                gradientUnits="userSpaceOnUse"
+                            >
+                                <stop stop-color="#D4B098" />
+                                <stop offset="1" stop-color="#D4B098" stop-opacity="0" />
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                    <svg
+                        class="lower-ellipse"
+                        width="222"
+                        height="507"
+                        viewBox="0 0 222 507"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <circle
+                            cx="372.283"
+                            cy="372.283"
+                            r="371.69"
+                            transform="rotate(-28.3485 372.283 372.283)"
+                            stroke="url(#paint0_linear_0_504)"
+                        />
+                        <defs>
+                            <linearGradient
+                                id="paint0_linear_0_504"
+                                x1="0.0935074"
+                                y1="387.742"
+                                x2="744.473"
+                                y2="382.985"
+                                gradientUnits="userSpaceOnUse"
+                            >
+                                <stop stop-color="#D4B098" />
+                                <stop offset="1" stop-color="#D4B098" stop-opacity="0" />
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </section>
+
+                <section class="section-social">
+                    <div class="text-box">
+                        <h2 class="header">Следите за нашими новостями</h2>
+                        <div class="description">
+                            Подписывайтесь на <strong>@conquest_watch</strong> в соцсетях и узнавайте о новинках и
+                            акциях первыми.
+                        </div>
+                        <div class="icons-social">
+                            <a href="#instagram">
+                                <svg
+                                    width="23"
+                                    height="24"
+                                    viewBox="0 0 23 24"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M6.6571 0.67334C2.98565 0.67334 0 3.63873 0 7.28325V16.8407C0 20.4852 2.98565 23.449 6.6571 23.449H16.3429C20.0143 23.449 23 20.4852 23 16.8407V7.28325C23 3.63873 20.0143 0.67334 16.3429 0.67334H6.6571ZM6.6571 2.6313H16.3429C18.9559 2.6313 21.0292 4.68941 21.0292 7.28325V16.8407C21.0292 19.4345 18.9559 21.491 16.3429 21.491H6.6571C4.04408 21.491 1.97241 19.4345 1.97241 16.8407V7.28325C1.97241 4.68941 4.04408 2.6313 6.6571 2.6313ZM17.6727 4.58924C16.9107 4.58924 16.2934 5.20201 16.2934 5.95832C16.2934 6.71466 16.9107 7.32741 17.6727 7.32741C18.4346 7.32741 19.0519 6.71466 19.0519 5.95832C19.0519 5.20201 18.4346 4.58924 17.6727 4.58924ZM11.5 6.19713C8.24893 6.19713 5.59264 8.83395 5.59264 12.0612C5.59264 15.2884 8.24893 17.9252 11.5 17.9252C14.7511 17.9252 17.409 15.2884 17.409 12.0612C17.409 8.83395 14.7511 6.19713 11.5 6.19713ZM11.5 8.15509C13.6853 8.15509 15.4366 9.89192 15.4366 12.0612C15.4366 14.2304 13.6853 15.9672 11.5 15.9672C9.31472 15.9672 7.56504 14.2304 7.56504 12.0612C7.56504 9.89192 9.31472 8.15509 11.5 8.15509Z"
+                                        fill="#5C5C50"
+                                    />
+                                </svg>
+                            </a>
+                            <a href="#facebook">
+                                <svg
+                                    width="12"
+                                    height="22"
+                                    viewBox="0 0 12 22"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M8.83169 0.571289C5.69558 0.571289 3.54784 2.30036 3.54784 5.47684V8.21442H0V11.9271H3.54784V21.449H7.78878V11.9271H11.3267L11.8581 8.21442H7.78878V5.84364C7.78878 4.76904 8.11969 4.0365 9.8251 4.0365H12V0.717411C11.6238 0.672179 10.3339 0.571289 8.83169 0.571289Z"
+                                        fill="#5C5C50"
+                                    />
+                                </svg>
+                            </a>
+                            <a href="#twitter">
+                                <svg
+                                    width="22"
+                                    height="18"
+                                    viewBox="0 0 22 18"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M22 2.38918C21.191 2.73222 20.321 2.96407 19.4081 3.06852C20.3398 2.5346 21.0552 1.68955 21.3922 0.682817C20.5202 1.17718 19.5546 1.53577 18.526 1.72905C17.7032 0.891167 16.5301 0.367432 15.232 0.367432C12.7393 0.367432 10.7189 2.298 10.7189 4.67956C10.7189 5.01766 10.7584 5.34689 10.8357 5.6623C7.0846 5.4827 3.75901 3.76541 1.53295 1.15673C1.14443 1.79333 0.921886 2.53398 0.921886 3.3244C0.921886 4.82069 1.71835 6.14036 2.92973 6.91397C2.18992 6.89187 1.49391 6.6978 0.885376 6.37458C0.88451 6.39275 0.884504 6.41067 0.884504 6.4287C0.884504 8.51842 2.44044 10.2609 4.50492 10.6573C4.12653 10.7559 3.7279 10.808 3.31624 10.808C3.02512 10.808 2.74286 10.7817 2.46681 10.7311C3.04153 12.4443 4.70801 13.6912 6.68333 13.7261C5.13742 14.8829 3.19166 15.5719 1.07697 15.5719C0.712916 15.5719 0.353368 15.5514 0 15.5118C1.99818 16.7353 4.37022 17.449 6.91929 17.449C15.2207 17.449 19.7597 10.8783 19.7597 5.17934C19.7597 4.99246 19.7552 4.80686 19.747 4.62193C20.6285 4.01345 21.3936 3.25416 21.999 2.38921"
+                                        fill="#5C5C50"
+                                    />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="social-imgs">
+                        <div class="image1"></div>
+                        <div class="image2"></div>
+                        <div class="image3"></div>
+                    </div>
+                </section>
+            </main>
+        </div>
+        <div class="background-wrapper">
+            <div class="container">
+                <footer class="footer">
+                    <div class="footer-list-block">
+                        <a href="#logo" class="logo-name">
                             <svg
-                                width="313"
-                                height="313"
-                                viewBox="0 0 313 313"
+                                width="26"
+                                height="26"
+                                viewBox="0 0 26 26"
                                 fill="none"
                                 xmlns="http://www.w3.org/2000/svg"
                             >
-                                <circle
-                                    cx="156.5"
-                                    cy="156.5"
-                                    r="156"
-                                    transform="matrix(-1 0 0 1 313 0)"
-                                    stroke="url(#paint0_linear_0_458)"
+                                <path
+                                    d="M24.0281 16.2514C23.2874 18.5859 21.6488 21.4738 18.4601 23.1836C16.5758 24.194 14.5387 24.6283 12.5481 24.5485L12.6022 1.48841C13.1984 1.48867 13.9131 1.51848 14.6442 1.60154C14.9947 1.64137 15.338 1.69231 15.6664 1.75501C16.3908 1.92715 17.0981 2.16871 17.7774 2.47653C20.0085 3.48751 21.9361 5.21181 23.1835 7.53828C24.2129 9.45794 24.6441 11.5354 24.5435 13.5607C24.5011 14.2443 24.3458 15.1969 24.0281 16.2514ZM10.6016 1.75158L10.5487 24.2928C7.35578 23.5984 4.47862 21.5631 2.81481 18.4602C-0.201192 12.8355 1.91356 5.83085 7.53823 2.81486C8.1905 2.4651 9.27882 2.03231 10.6016 1.75158Z"
+                                    stroke="url(#paint0_linear_0_488)"
+                                    stroke-width="2"
                                 />
                                 <defs>
                                     <linearGradient
-                                        id="paint0_linear_0_458"
-                                        x1="6.65701e-07"
-                                        y1="163"
-                                        x2="313"
-                                        y2="161"
+                                        id="paint0_linear_0_488"
+                                        x1="0.914146"
+                                        y1="11.338"
+                                        x2="27.354"
+                                        y2="12.9979"
                                         gradientUnits="userSpaceOnUse"
                                     >
-                                        <stop stop-color="#E2D0C4" />
-                                        <stop offset="1" stop-color="#E2D0C4" stop-opacity="0" />
+                                        <stop offset="0.288448" stop-color="white" />
+                                        <stop offset="0.780176" stop-color="white" stop-opacity="0" />
                                     </linearGradient>
                                 </defs>
-                                <image x="0" y="0" width="100%" height="100%" xlink:href="./img/watch_1.png"></image>
                             </svg>
-                        </div>
-                        <div class="learn-more"><a href="#product-page">Подробнее</a></div>
-                    </figure>
-                    <figure class="popular-model">
-                        <div class="popular-text-box">
-                            <div class="name">Bvlgari</div>
-                            <div class="price">81 700 &#8381;</div>
-                        </div>
-                        <div class="ellipse">
-                            <svg
-                                width="313"
-                                height="313"
-                                viewBox="0 0 313 313"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                            >
-                                <circle
-                                    cx="156.5"
-                                    cy="156.5"
-                                    r="156"
-                                    transform="matrix(-1 0 0 1 313 0)"
-                                    stroke="url(#paint0_linear_0_458)"
-                                />
-                                <defs>
-                                    <linearGradient
-                                        id="paint0_linear_0_458"
-                                        x1="6.65701e-07"
-                                        y1="163"
-                                        x2="313"
-                                        y2="161"
-                                        gradientUnits="userSpaceOnUse"
-                                    >
-                                        <stop stop-color="#E2D0C4" />
-                                        <stop offset="1" stop-color="#E2D0C4" stop-opacity="0" />
-                                    </linearGradient>
-                                </defs>
-                                <image x="0" y="0" width="100%" height="100%" xlink:href="./img/watch_2.png"></image>
-                            </svg>
-                        </div>
-                        <div class="learn-more"><a href="#product-page">Подробнее</a></div>
-                    </figure>
-                    <figure class="popular-model">
-                        <div class="popular-text-box">
-                            <div class="name">Bvlgari</div>
-                            <div class="price">72 700 &#8381;</div>
-                        </div>
-                        <div class="ellipse">
-                            <svg
-                                width="313"
-                                height="313"
-                                viewBox="0 0 313 313"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                            >
-                                <circle
-                                    cx="156.5"
-                                    cy="156.5"
-                                    r="156"
-                                    transform="matrix(-1 0 0 1 313 0)"
-                                    stroke="url(#paint0_linear_0_458)"
-                                />
-                                <defs>
-                                    <linearGradient
-                                        id="paint0_linear_0_458"
-                                        x1="6.65701e-07"
-                                        y1="163"
-                                        x2="313"
-                                        y2="161"
-                                        gradientUnits="userSpaceOnUse"
-                                    >
-                                        <stop stop-color="#E2D0C4" />
-                                        <stop offset="1" stop-color="#E2D0C4" stop-opacity="0" />
-                                    </linearGradient>
-                                </defs>
-                                <image x="0" y="0" width="100%" height="100%" xlink:href="./img/watch_3.png"></image>
-                            </svg>
-                        </div>
-                        <div class="learn-more"><a href="#product-page">Подробнее</a></div>
-                    </figure>
-                </div>
-            </section>
-
-            <section class="section-quality">
-                <div class="filler-left-side"></div>
-                <div class="slider">
-                    <div class="img-container">
-                        <img src="./img/photo_banner.jpg" alt="Циферблат часов" />
+                            <div class="name">conquest</div>
+                        </a>
+                        <ul class="footer-list">
+                            <li>8 (499) 450-47-97</li>
+                            <li>info@conquest.watch.ru</li>
+                        </ul>
                     </div>
-                    <div class="switcher">
-                        <a href="#previous-slide">
-                            <svg
-                                width="7"
-                                height="12"
-                                viewBox="0 0 7 12"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                            >
-                                <path d="M6 1L1 6L6 11" stroke="#1B1A17" stroke-width="0.5" />
-                            </svg>
-                        </a>
-                        <div class="number">01</div>
-                        <a href="#next-slide">
-                            <svg
-                                width="7"
-                                height="12"
-                                viewBox="0 0 7 12"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                            >
-                                <path d="M1 11L6 6L1 1" stroke="#1B1A17" stroke-width="0.5" />
-                            </svg>
-                        </a>
+                    <div class="footer-list-block">
+                        <h3 class="footer-list-heading"><a href="#about">О компании</a></h3>
+                        <ul class="footer-list">
+                            <li><a href="#shops">Наши магазины</a></li>
+                            <li><a href="#vacancy">Вакансии</a></li>
+                            <li><a href="#certificates">Сертификаты</a></li>
+                            <li><a href="#testimonials">Отзывы</a></li>
+                        </ul>
                     </div>
-                </div>
-                <div class="text-box">
-                    <h2 class="header">Подлинное качество</h2>
-                    <p class="description">
-                        Все часы производятся в Швейцарии и имеют сертификаты качества. Настоящие швейцарские часы
-                        &mdash; это предмет гордости и престижа.
-                    </p>
-                    <a href="#catalog" class="btn btn-quality">Смотреть каталог</a>
-                </div>
-                <svg
-                    class="upper-ellipse"
-                    width="215"
-                    height="217"
-                    viewBox="0 0 215 217"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                >
-                    <circle
-                        cx="183.382"
-                        cy="34.3817"
-                        r="182.082"
-                        transform="rotate(-28.3485 183.382 34.3817)"
-                        stroke="url(#paint0_linear_0_503)"
-                    />
-                    <defs>
-                        <linearGradient
-                            id="paint0_linear_0_503"
-                            x1="0.799943"
-                            y1="41.965"
-                            x2="365.964"
-                            y2="39.6317"
-                            gradientUnits="userSpaceOnUse"
-                        >
-                            <stop stop-color="#D4B098" />
-                            <stop offset="1" stop-color="#D4B098" stop-opacity="0" />
-                        </linearGradient>
-                    </defs>
-                </svg>
-                <svg
-                    class="lower-ellipse"
-                    width="222"
-                    height="507"
-                    viewBox="0 0 222 507"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                >
-                    <circle
-                        cx="372.283"
-                        cy="372.283"
-                        r="371.69"
-                        transform="rotate(-28.3485 372.283 372.283)"
-                        stroke="url(#paint0_linear_0_504)"
-                    />
-                    <defs>
-                        <linearGradient
-                            id="paint0_linear_0_504"
-                            x1="0.0935074"
-                            y1="387.742"
-                            x2="744.473"
-                            y2="382.985"
-                            gradientUnits="userSpaceOnUse"
-                        >
-                            <stop stop-color="#D4B098" />
-                            <stop offset="1" stop-color="#D4B098" stop-opacity="0" />
-                        </linearGradient>
-                    </defs>
-                </svg>
-            </section>
-
-            <section class="section-social">
-                <div class="text-box">
-                    <h2 class="header">Следите за нашими новостями</h2>
-                    <div class="description">
-                        Подписывайтесь на <strong>@conquest_watch</strong> в соцсетях и узнавайте о новинках и акциях
-                        первыми.
+                    <div class="footer-list-block">
+                        <h3 class="footer-list-heading"><a href="#customer">Покупателям</a></h3>
+                        <ul class="footer-list">
+                            <li><a href="#catalog">Каталог товаров</a></li>
+                            <li><a href="#how-order">Как заказать?</a></li>
+                            <li><a href="#faq">FAQ</a></li>
+                            <li><a href="#business">Корпоративным клиентам</a></li>
+                        </ul>
                     </div>
-                    <div class="icons-social">
-                        <a href="#instagram">
-                            <svg
-                                width="23"
-                                height="24"
-                                viewBox="0 0 23 24"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                            >
-                                <path
-                                    d="M6.6571 0.67334C2.98565 0.67334 0 3.63873 0 7.28325V16.8407C0 20.4852 2.98565 23.449 6.6571 23.449H16.3429C20.0143 23.449 23 20.4852 23 16.8407V7.28325C23 3.63873 20.0143 0.67334 16.3429 0.67334H6.6571ZM6.6571 2.6313H16.3429C18.9559 2.6313 21.0292 4.68941 21.0292 7.28325V16.8407C21.0292 19.4345 18.9559 21.491 16.3429 21.491H6.6571C4.04408 21.491 1.97241 19.4345 1.97241 16.8407V7.28325C1.97241 4.68941 4.04408 2.6313 6.6571 2.6313ZM17.6727 4.58924C16.9107 4.58924 16.2934 5.20201 16.2934 5.95832C16.2934 6.71466 16.9107 7.32741 17.6727 7.32741C18.4346 7.32741 19.0519 6.71466 19.0519 5.95832C19.0519 5.20201 18.4346 4.58924 17.6727 4.58924ZM11.5 6.19713C8.24893 6.19713 5.59264 8.83395 5.59264 12.0612C5.59264 15.2884 8.24893 17.9252 11.5 17.9252C14.7511 17.9252 17.409 15.2884 17.409 12.0612C17.409 8.83395 14.7511 6.19713 11.5 6.19713ZM11.5 8.15509C13.6853 8.15509 15.4366 9.89192 15.4366 12.0612C15.4366 14.2304 13.6853 15.9672 11.5 15.9672C9.31472 15.9672 7.56504 14.2304 7.56504 12.0612C7.56504 9.89192 9.31472 8.15509 11.5 8.15509Z"
-                                    fill="#5C5C50"
-                                />
-                            </svg>
-                        </a>
-                        <a href="#facebook">
-                            <svg
-                                width="12"
-                                height="22"
-                                viewBox="0 0 12 22"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                            >
-                                <path
-                                    d="M8.83169 0.571289C5.69558 0.571289 3.54784 2.30036 3.54784 5.47684V8.21442H0V11.9271H3.54784V21.449H7.78878V11.9271H11.3267L11.8581 8.21442H7.78878V5.84364C7.78878 4.76904 8.11969 4.0365 9.8251 4.0365H12V0.717411C11.6238 0.672179 10.3339 0.571289 8.83169 0.571289Z"
-                                    fill="#5C5C50"
-                                />
-                            </svg>
-                        </a>
-                        <a href="#twitter">
-                            <svg
-                                width="22"
-                                height="18"
-                                viewBox="0 0 22 18"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                            >
-                                <path
-                                    d="M22 2.38918C21.191 2.73222 20.321 2.96407 19.4081 3.06852C20.3398 2.5346 21.0552 1.68955 21.3922 0.682817C20.5202 1.17718 19.5546 1.53577 18.526 1.72905C17.7032 0.891167 16.5301 0.367432 15.232 0.367432C12.7393 0.367432 10.7189 2.298 10.7189 4.67956C10.7189 5.01766 10.7584 5.34689 10.8357 5.6623C7.0846 5.4827 3.75901 3.76541 1.53295 1.15673C1.14443 1.79333 0.921886 2.53398 0.921886 3.3244C0.921886 4.82069 1.71835 6.14036 2.92973 6.91397C2.18992 6.89187 1.49391 6.6978 0.885376 6.37458C0.88451 6.39275 0.884504 6.41067 0.884504 6.4287C0.884504 8.51842 2.44044 10.2609 4.50492 10.6573C4.12653 10.7559 3.7279 10.808 3.31624 10.808C3.02512 10.808 2.74286 10.7817 2.46681 10.7311C3.04153 12.4443 4.70801 13.6912 6.68333 13.7261C5.13742 14.8829 3.19166 15.5719 1.07697 15.5719C0.712916 15.5719 0.353368 15.5514 0 15.5118C1.99818 16.7353 4.37022 17.449 6.91929 17.449C15.2207 17.449 19.7597 10.8783 19.7597 5.17934C19.7597 4.99246 19.7552 4.80686 19.747 4.62193C20.6285 4.01345 21.3936 3.25416 21.999 2.38921"
-                                    fill="#5C5C50"
-                                />
-                            </svg>
-                        </a>
+                    <div class="footer-list-block">
+                        <h3 class="footer-list-heading"><a href="#payment-delivery">Оплата и доставка</a></h3>
+                        <ul class="footer-list">
+                            <li><a href="#payment-method">Способ оплаты</a></li>
+                            <li><a href="#delivery-time">Время доставки</a></li>
+                            <li><a href="#warranty">Гарантии и ремонт</a></li>
+                            <li><a href="#compensation">Возврат и компенсация</a></li>
+                        </ul>
                     </div>
-                </div>
-                <div class="social-imgs">
-                    <div class="image1"></div>
-                    <div class="image2"></div>
-                    <div class="image3"></div>
-                </div>
-            </section>
-        </main>
-
-        <footer class="footer">
-            <div class="contact"></div>
-            <div class="about"></div>
-            <div class="customer"></div>
-            <div class="pay-and-delivery"></div>
-        </footer>
+                </footer>
+            </div>
+        </div>
     </body>
 </html>

@@ -97,6 +97,9 @@ h6 {
 body {
   font-family: "Playfair Display", serif;
   background-color: #fdfdfb;
+}
+
+.container {
   width: 1366px;
   margin: 0 auto;
 }
@@ -557,4 +560,70 @@ body {
   width: 377px;
   height: 460px;
   background: url("../img/photo_3.jpg") 50%/cover;
+}
+
+.background-wrapper {
+  background-color: #444240;
+}
+
+.footer {
+  padding: 67px 185px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  font-family: "Roboto", sans-serif;
+}
+.footer .footer-list-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 25px;
+}
+.footer .footer-list-block .logo-name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.footer .footer-list-block .logo-name .name {
+  text-transform: uppercase;
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 19px;
+  letter-spacing: 0.14em;
+  color: #ffffff;
+}
+.footer .footer-list-block .footer-list-heading {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 26px;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.footer .footer-list-block .footer-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 15px;
+}
+.footer .footer-list-block .footer-list li {
+  font-size: 12px;
+  line-height: 14px;
+  color: rgba(255, 255, 255, 0.75);
 }

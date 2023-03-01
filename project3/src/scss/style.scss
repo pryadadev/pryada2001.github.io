@@ -102,6 +102,9 @@ h6 {
 body {
     font-family: 'Playfair Display', serif;
     background-color: #fdfdfb;
+}
+
+.container {
     width: 1366px;
     margin: 0 auto;
 }
@@ -498,6 +501,54 @@ body {
             width: 377px;
             height: 460px;
             background: url('../img/photo_3.jpg') 50% / cover;
+        }
+    }
+}
+
+.background-wrapper {
+    background-color: #444240;
+}
+
+.footer {
+    padding: 67px 185px;
+    display: flex;
+    justify-content: space-evenly;
+    font-family: 'Roboto', sans-serif;
+    .footer-list-block {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        .logo-name {
+            display: flex;
+            align-items: center;
+            .name {
+                text-transform: uppercase;
+                font-family: 'Playfair Display';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 19px;
+                letter-spacing: 0.14em;
+                color: #ffffff;
+            }
+        }
+        .footer-list-heading {
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 26px;
+            letter-spacing: 0.07em;
+            text-transform: uppercase;
+            color: #ffffff;
+        }
+        .footer-list {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            li {
+                font-size: 12px;
+                line-height: 14px;
+                color: rgba(255, 255, 255, 0.75);
+            }
         }
     }
 }
