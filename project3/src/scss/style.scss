@@ -452,3 +452,52 @@ body {
         right: 0;
     }
 }
+
+.section-social {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 81px 98px 90px 97px;
+    .text-box {
+        .header {
+            font-size: 32px;
+            line-height: 43px;
+            color: #1b1a17;
+            margin-bottom: 40px;
+        }
+        .description {
+            font-family: 'Roboto';
+            font-size: 16px;
+            line-height: 27px;
+            color: #444240;
+            margin-bottom: 118px;
+        }
+        .icons-social {
+            display: flex;
+            align-items: center;
+            gap: 18px;
+        }
+    }
+    .social-imgs {
+        display: grid;
+        grid-template-columns: 242px 377px;
+        gap: 10px;
+        .image1 {
+            width: 242px;
+            height: 228px;
+            background: url('../img/photo_1.jpg') 50% / cover;
+        }
+        .image2 {
+            width: 242px;
+            height: 222px;
+            background: url('../img/photo_2.jpg') 50% / cover;
+        }
+        .image3 {
+            grid-column: 2 / 3;
+            grid-row: 1 / 3;
+            width: 377px;
+            height: 460px;
+            background: url('../img/photo_3.jpg') 50% / cover;
+        }
+    }
+}
